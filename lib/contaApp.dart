@@ -48,7 +48,21 @@ class _MenuAppState extends State<MenuApp> {
             colors: [topColor, bottomColor],
           ),
         ),
-    
+        
+         child: Column(
+           mainAxisAlignment: MainAxisAlignment.start,
+           crossAxisAlignment: CrossAxisAlignment.stretch,
+           children: [
+             Container(
+               child: Text(
+                 'Ola Mundo',
+                 style: TextStyle(
+                   color: Colors.white
+                 ),)
+             ),
+           ],
+         ),
+        
       ),
     );
   }
