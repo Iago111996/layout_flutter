@@ -46,51 +46,51 @@ class _LoginAppState extends State<LoginApp> {
                       Padding(
                         padding: const EdgeInsets.all(15.0),
                         child: Column(
-                            children: [
-                              TextFormField(
-                                onChanged: (text) {
-                                  email = text;
-                                },
-                                keyboardType: TextInputType.emailAddress,
-                                autofocus: true,
-                                style: TextStyle(color: Colors.white),
-                                decoration: InputDecoration(
-                                  labelText: "E-mail",
-                                  border: OutlineInputBorder(
-                                    borderSide: BorderSide(color: Colors.white),
-                                  ),
-                                  labelStyle: TextStyle(color: Colors.white),
-                                  prefix: Icon(
-                                    Icons.mail_outline,
-                                    color: Colors.white,
-                                  ),
+                          children: [
+                            TextFormField(
+                              onChanged: (text) {
+                                email = text;
+                              },
+                              keyboardType: TextInputType.emailAddress,
+                              autofocus: true,
+                              style: TextStyle(color: Colors.white),
+                              decoration: InputDecoration(
+                                labelText: "E-mail",
+                                border: OutlineInputBorder(
+                                  borderSide: BorderSide(color: Colors.white),
+                                ),
+                                labelStyle: TextStyle(color: Colors.white),
+                                prefix: Icon(
+                                  Icons.mail_outline,
+                                  color: Colors.white,
                                 ),
                               ),
-                              SizedBox(
-                                height: 10,
-                              ),
-                              TextFormField(
-                                onChanged: (text) {
-                                  password = text;
-                                },
-                                keyboardType: TextInputType.visiblePassword,
-                                obscureText: true,
-                                autofocus: true,
-                                style: TextStyle(color: Colors.white),
-                                decoration: InputDecoration(
-                                  labelText: "Password",
-                                  border: OutlineInputBorder(
-                                    borderSide: BorderSide(color: Colors.white),
-                                  ),
-                                  labelStyle: TextStyle(color: Colors.white),
-                                  prefix: Icon(
-                                    Icons.open_in_browser,
-                                    color: Colors.white,
-                                  ),
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            TextFormField(
+                              onChanged: (text) {
+                                password = text;
+                              },
+                              keyboardType: TextInputType.visiblePassword,
+                              obscureText: true,
+                              autofocus: true,
+                              style: TextStyle(color: Colors.white),
+                              decoration: InputDecoration(
+                                labelText: "Password",
+                                border: OutlineInputBorder(
+                                  borderSide: BorderSide(color: Colors.white),
+                                ),
+                                labelStyle: TextStyle(color: Colors.white),
+                                prefix: Icon(
+                                  Icons.open_in_browser,
+                                  color: Colors.white,
                                 ),
                               ),
-                            ],
-                          ),
+                            ),
+                          ],
+                        ),
                       ),
                       SizedBox(
                         height: 15,
@@ -99,8 +99,7 @@ class _LoginAppState extends State<LoginApp> {
                       RaisedButton(
                         textColor: Colors.white,
                         onPressed: () {
-                          if (email == 'iago111996@gmail.com' &&
-                              password == '123') {
+                          if (email == 'iago' && password == '123') {
                             //metodo pra navegar entre paginas forçcando
                             //push => mantem o login
                             //pushReplacement => despresa a outra page
